@@ -1,5 +1,19 @@
 # How to run the project (terminal commands)
 
+## Admin login
+
+| | |
+|---|---|
+| **URL** | http://localhost:5173 |
+| **Email** | `admin@example.com` |
+| **Password** | `Admin@12345` |
+
+This is the default account, created automatically the first time the API server starts (values come from `ADMIN_EMAIL` / `ADMIN_PASSWORD` in `server\.env`).
+
+> To use a different login, change `ADMIN_EMAIL` / `ADMIN_PASSWORD` in `server\.env` **before the first start**. The account is created only once. After that, changing just `ADMIN_PASSWORD` has no effect. Changing `ADMIN_EMAIL` creates an additional admin account on the next start; the old one keeps working until you delete it in MongoDB (database `surveillance`, collection `users`).
+
+---
+
 You need **3 terminals** (Command Prompt). MongoDB does not need a terminal; it runs as a Windows service.
 
 In every command below, replace `D:\ai-surveillance-system` with the folder where the project is on your laptop.
@@ -58,7 +72,7 @@ Ready when it shows `Local: http://localhost:5173/`.
 
 ### Open the app
 
-Go to **http://localhost:5173**, sign in with your `ADMIN_EMAIL` / `ADMIN_PASSWORD`, and click **Start camera**.
+Go to **http://localhost:5173**, sign in with **admin@example.com** / **Admin@12345** (or your own `ADMIN_EMAIL` / `ADMIN_PASSWORD`), and click **Start camera**.
 
 ### Stop
 

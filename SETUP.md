@@ -130,7 +130,7 @@ MongoDB does not need a terminal; it runs as a Windows service (Step 4). To stop
 
 ## Step 7: Use it
 
-1. Sign in with `ADMIN_EMAIL` / `ADMIN_PASSWORD`.
+1. Sign in with `ADMIN_EMAIL` / `ADMIN_PASSWORD`. The defaults are **admin@example.com** / **Admin@12345**.
 2. **Settings:** check the recipient list, click **Save settings**, then **Send test email**. The email should arrive within a minute.
 3. **Live monitor:** wait until "Loading AI models" disappears (about 25 seconds), then click **Start camera**. Allow camera access if Windows asks.
 4. Test it: hold a kitchen knife in front of the camera, or show a phone screen with a photo of a gun or a fire. The score turns red, an alert sound plays, a toast appears, and an email with the screenshot is sent.
