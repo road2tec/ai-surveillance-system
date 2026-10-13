@@ -1,5 +1,7 @@
 # AI-Driven Integrated Surveillance System for Threat Recognition and Emergency Response
 
+> **Quick links:** [RUN.md](RUN.md) (terminal commands to run the project) · [SETUP.md](SETUP.md) (install on a new laptop) · [Project documentation PDF](docs/Project-Documentation.pdf)
+
 A laptop webcam feed is analysed in real time by pretrained AI models. The system detects **weapons (gun, knife), fire, smoke, blood, fights and suspicious activity**. Each processed frame gets a **threat score (0-100)** and a level (Safe, Medium Danger or High Danger). When a threat is confirmed, the system:
 
 1. saves an annotated screenshot,
