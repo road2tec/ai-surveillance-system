@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.env
+ai-service/venv/
+ai-service/models/
+ai-service/captures/
+server/uploads/screenshots/*
+!server/uploads/screenshots/.gitkeep
+__pycache__/
+*.pyc
+# auto-downloaded by Ultralytics (YOLO-World text encoder) - too large for GitHub
+ai-service/weights/
+runs/

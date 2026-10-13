@@ -1,0 +1,21 @@
+﻿# Core web service
+fastapi>=0.110
+uvicorn[standard]>=0.29
+python-dotenv>=1.0
+requests>=2.31
+python-multipart>=0.0.9
+
+# Vision / ML (pretrained inference only, no training)
+numpy<2.0
+opencv-python>=4.9
+pillow>=10.0
+torch>=2.2
+torchvision>=0.17
+ultralytics>=8.3.0
+transformers>=4.40
+# some HF violence models ship timm-format ViT weights
+timm>=1.0
+huggingface_hub>=0.23
+safetensors>=0.4
+# CLIP text encoder required by YOLO-World set_classes()
+git+https://github.com/ultralytics/CLIP.git

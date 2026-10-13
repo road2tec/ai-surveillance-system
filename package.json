@@ -1,0 +1,17 @@
+{
+  "name": "surveillance-system",
+  "private": true,
+  "description": "AI-Driven Integrated Surveillance System for Threat Recognition and Emergency Response",
+  "scripts": {
+    "setup": "npm --prefix server install && npm --prefix client install && cd ai-service && python -m venv venv && venv\\Scripts\\python -m pip install -r requirements.txt",
+    "models": "cd ai-service && venv\\Scripts\\python download_models.py",
+    "seed": "npm --prefix server run seed",
+    "ai": "cd ai-service && venv\\Scripts\\python -m app.main",
+    "server": "npm --prefix server run dev",
+    "client": "npm --prefix client run dev",
+    "dev": "concurrently -k -n ai,api,web -c yellow,cyan,green \"npm:ai\" \"npm:server\" \"npm:client\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
